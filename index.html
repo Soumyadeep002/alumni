@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="css/design.css">
     <script src="https://kit.fontawesome.com/a6a7ae6fb2.js" crossorigin="anonymous"></script>
 
+    <style>
+        .rotate-down{
+            transform: rotate(45deg);
+            position: absolute;
+            translate: 0 0.01rem;
+        }
+        .hide{
+            opacity: 0;
+        }
+        .rotate-up{
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+    </style>
+
 </head>
 <body class="overflow-x-hidden"> 
 
@@ -18,11 +33,20 @@
                     <div class="text-left text-base md:text-lg lg:text-xl">A L U M N I</div>
                 </div>
 
-
-                <div id="menu_btn" class="mr-5 md:hidden flex flex-col justify-center items-center gap-1.5 cursor-pointer">
-                    <div id="line1" class="w-7 h-1 bg-white rounded-xl"></div>
-                    <div id="line2" class="w-7 h-1 bg-white rounded-xl"></div>
-                    <div id="line3" class="w-7 h-1 bg-white rounded-xl"></div>
+                <div id="menu_btn" class="mr-5 order-2 md:hidden flex flex-col justify-center items-center gap-1.5 cursor-pointer">
+                    <div id="line1" class="w-8 h-1 duration-200 transition-all bg-white rounded-xl"></div>
+                    <div id="line2" class="w-8 h-1 duration-200 transition-all bg-white rounded-xl"></div>
+                    <div id="line3" class="w-8 h-1 duration-200 transition-all bg-white rounded-xl"></div>
+                </div>
+                <div id="mobnav" class="absolute md:static order-1 top-20 transition-all duration-200 left-[100%] my-auto w-full md:w-fit bg-white md:bg-transparent z-[98]">
+                    <ul class="flex flex-col md:flex-row gap-0 md:gap-10 mr-5">
+                        <a href="#"><li class="text-blue-800 border-b-2 md:border-0 text-lg md:text-sm border-blue-200 hover:bg-blue-400 hover:text-white cursor-pointer pl-16 py-5 md:p-0 text-left md:text-white lg:text-lg font-semibold">HOME</li></a>
+                        <a href="#"><li class="text-blue-800 border-b-2 md:border-0 text-lg md:text-sm border-blue-200 hover:bg-blue-400 hover:text-white cursor-pointer pl-16 py-5 md:p-0 text-left md:text-white lg:text-lg font-semibold">EVENTS</li></a>
+                        <a href="#"><li class="text-blue-800 border-b-2 md:border-0 text-lg md:text-sm border-blue-200 hover:bg-blue-400 hover:text-white cursor-pointer pl-16 py-5 md:p-0 text-left md:text-white lg:text-lg font-semibold">ALUMNI</li></a>
+                        <a href=""><li class="text-blue-800 border-b-2 md:border-0 text-lg md:text-sm border-blue-200 hover:bg-blue-400 hover:text-white cursor-pointer pl-16 py-5 md:p-0 text-left md:text-white lg:text-lg font-semibold">OPPERTUNITIES</li></a>
+                        <a href="#"><li class="text-blue-800 border-b-2 md:border-0 text-lg md:text-sm border-blue-200 hover:bg-blue-400 hover:text-white cursor-pointer pl-16 py-5 md:p-0 text-left md:text-white lg:text-lg font-semibold">TEAM</li></a>
+                        <a href="#"><li class="text-blue-800 border-b-2 md:border-0 text-lg md:text-sm border-blue-200 hover:bg-blue-400 hover:text-white cursor-pointer pl-16 py-5 md:p-0 text-left md:text-white lg:text-lg font-semibold">REGISTER</li></a>
+                    </ul>
                 </div>
 
             </div>
@@ -45,13 +69,13 @@
         <div style=" transform: skew(0deg, -8deg) translateY(-40%); height: 18rem;" class="z-0 hidden md:block absolute w-full  bg-white"></div>
 
         <section id="about" >
-            <div class="py-12 static md:absolute left-[50%] -translate-y-0 md:-translate-y-[23rem] md:-translate-x-[50%] mx-auto w-full md:w-4/6 lg:w-3/4 xl:w-3/5 shadow-lg bg-white">
+            <div class="py-12 z-[92] static md:absolute left-[50%] -translate-y-0 md:-translate-y-[23rem] md:-translate-x-[50%] mx-auto w-full md:w-4/6 lg:w-3/4 xl:w-3/5 shadow-lg bg-white">
                 <div class="ttl text-center ">
                     <h1 class="text-4xl font-bold text-blue-400">This is <span class="text-blue-800">ABOUT</span></h1>
                     <h4 class="text-xl font-bold text-blue-950">Lorem ipsum dolor sit asd.</h4>
                 </div>
                 <p class="text-justify px-5 py-8">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam possimus voluptates sunt repudiandae. Ipsa, omnis! Possimus repudiandae corporis incidunt quidem, veniam facilis molestiae eum! Rerum veniam totam nam ipsa dolores. Sint, adipisci! Quidem iste quibusdam molestias porro maiores repudiandae excepturi perferendis pariatur harum illo?
+                    Maulana Abul Kalam Azad University of Technology,West Bengal(formally known as West Bengal University of Technology) is proud to have as its alumni a group of engineers, technologists, scientists. Now, we are giving a platform to all to share their experience with each other. The students along with the help of the university, in its endeavour to strengthen the link with the alumni, has set an Alumni Association consisting of a dedicated team of members. The Alumni Office was assisted by the TEQIP and university grant. The Alumni Association has been created at the University which extends several facilities and services to the Alumni to continue and enhance their pleasant association with the university which will be shared ahead.
                 </p>              
                 <button type="button" class="mx-10 shadow-lg md:mx-0 md:absolute left-[50%] md:-translate-x-[50%] md:tra bg-white hover:bg-blue-800 transition-colors duration-200 px-5 md:px-14 py-3 border-4 border-blue-400 hover:border-blue-800 text-blue-800 hover:text-white text-lg font-bold rounded-lg">Learn more</button>
             </div>
@@ -60,7 +84,7 @@
         <div id="sub-sections" class="relative bg-white  z-[90]">      
             <section id="events">
                 <div class="px-5 w-full md:w-4/5 lg:w-3/4 mx-auto py-10">
-                    <h1 class="ttl text-3xl text-center font-semibold text-blue-400">ALUMNI <span class="text-blue-800">EVENTS</span></h1>
+                    <h1 class="ttl text-3xl text-center font-semibold text-blue-400 md:mt-36 lg:mt-10">ALUMNI <span class="text-blue-800">EVENTS</span></h1>
                     <div class="eventss flex flex-col lg:flex-row py-8 justify-center items-center">
                         <div id="event1" class="flex my-5">
                             <div class="text-right border-r-4 border-blue-400 px-5 md:px-3">
@@ -173,5 +197,6 @@
 
     </footer>
     
+    <script src="js/script.js"></script>
 </body>
 </html>
