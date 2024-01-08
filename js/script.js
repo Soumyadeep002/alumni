@@ -23,16 +23,10 @@ menu_btn.addEventListener("click", function () {
     if(value > 100){
       navbar.classList.remove("bg-blue-800");
       navbar.classList.add("bg-blue-950");
-      topbar.classList.add("-mt-8");
-      mobnav.classList.remove("top-28");
-      mobnav.classList.add("top-20");
     }
     else{
       navbar.classList.add("bg-blue-800");
       navbar.classList.remove("bg-blue-950");
-      topbar.classList.remove("-mt-8");
-      mobnav.classList.add("top-28");
-      mobnav.classList.remove("top-20");
     }
 
   })
